@@ -1,0 +1,10 @@
+all: MultiThreadServer Client
+
+MultiThreadServer: MultiThreadServer.java ChildThread.java
+	javac MultiThreadServer.java ChildThread.java
+
+Client: Client.java
+	javac Client.java
+
+clean:
+	rm -f *.class
